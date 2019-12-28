@@ -1,0 +1,5 @@
+version: "3"
+services:
+  trans:
+    build: ./.devcontainer
+    entrypoint: trans
