@@ -2,4 +2,7 @@ version: "3"
 services:
   trans:
     build: ./.devcontainer
-    entrypoint: trans
+    entrypoint: ./trans-log
+    volumes:
+      - .:/workspace/docker-compose-trans
+    working_dir: /workspace/docker-compose-trans

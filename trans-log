@@ -1,0 +1,6 @@
+#!/bin/bash
+
+dirname="./logs/$(date +%Y%m%d)"
+filename="$(date +%H%M%S)-$(echo ${@} | awk '{ substr(gsub(/[^0-9A-Za-z]/, "-"), 1, 16); print }').log"
+mkdir -p "${dirname}"
+trans "$@" | tee -a "${dirname}/${filename}"
