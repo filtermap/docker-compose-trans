@@ -1,7 +1,5 @@
 FROM ubuntu:bionic
 
-RUN echo $DEBIAN_FRONTEND
-
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update
