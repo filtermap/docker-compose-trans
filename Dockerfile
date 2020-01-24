@@ -18,5 +18,3 @@ ENV DEBIAN_FRONTEND=dialog
 RUN git clone --depth=1 -b v0.9.6.11 https://github.com/soimort/translate-shell
 RUN cd translate-shell/ && make
 RUN cd translate-shell/ && make install
-
-ENV TZ=Asia/Tokyo
