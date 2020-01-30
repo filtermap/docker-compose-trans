@@ -3,6 +3,8 @@ services:
   trans:
     build: .
     entrypoint: ./trans-log
+    env_file:
+      - .env
     volumes:
       - .:/workspace:cached
     working_dir: /workspace
